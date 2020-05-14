@@ -76,7 +76,7 @@ while len(explored) < len(room_graph):
 
         # finally, add the direction to traversal path
         traversal_path.append(direction)
-        print(traversal_path)
+        # print(traversal_path)
 
     # if current room's exits have all been explored
     else:
@@ -106,7 +106,7 @@ while len(explored) < len(room_graph):
                     # get moving
                     player.travel(direction)
                     traversal_path.append(direction)
-                    print(traversal_path)
+                    # print(traversal_path)
                 # not sure how else to break the loop here
                 break
 
