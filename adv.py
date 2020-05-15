@@ -123,10 +123,12 @@ while len(explored) < len(room_graph):
 visited_rooms = set()
 player.current_room = world.starting_room
 visited_rooms.add(player.current_room)
+# print(visited_rooms)
 
 for move in traversal_path:
     player.travel(move)
     visited_rooms.add(player.current_room)
+    # print(visited_rooms)
 
 if len(visited_rooms) == len(room_graph):
     print(f"TESTS PASSED: {len(traversal_path)} moves, {len(visited_rooms)} rooms visited")
